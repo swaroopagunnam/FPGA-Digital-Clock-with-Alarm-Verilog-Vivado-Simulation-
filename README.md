@@ -1,5 +1,5 @@
 # FPGA-Digital-Clock-with-Alarm-Verilog-Vivado-Simulation-
-A digital clock implemented in Verilog, featuring timekeeping, 7-segment display, and an alarm system. Fully testable in simulation — no hardware required.
+A digital clock implemented in Verilog, featuring timekeeping, 7-segment display, and an alarm system. Fully testable in simulation .
 🧠 Features
 ✅ Real-time clock: Hours, Minutes, Seconds counter
 
@@ -30,10 +30,6 @@ Edit
 
 
 🚀 How to Run the Simulation
-🧪 Using Icarus Verilog + GTKWave
-bash
-Copy
-Edit
 # Compile all Verilog files
 iverilog -o sim.out *.v
 
@@ -41,7 +37,7 @@ iverilog -o sim.out *.v
 vvp sim.out
 
 # View waveform
-gtkwave digital_clock.vcd
+digital_clock.vcd
 🧪 Using Vivado (xsim)
 Open Vivado > Create New Project > Add Sources (all .v files)
 
@@ -50,10 +46,7 @@ Set tb_digital_clock_top as top module for simulation
 Run simulation and view waveforms
 
  Block Diagram
-lua
-Copy
-Edit
-        +--------------------+
+    +--------------------+
         |  clock_divider.v   | --> 1Hz, 1kHz
         +--------------------+
                   |
@@ -73,7 +66,7 @@ Edit
         |           digital_clock_top.v               |
         +---------------------------------------------+
 📸 Screenshots / Waveform Output
-(Add screenshots from GTKWave or Vivado waveform viewer here)
+(Vivado waveform viewer )
 
 ⏰ Alarm triggering after 2 minutes
 
@@ -81,7 +74,7 @@ Edit
 
 🧠 Time increment logic in simulation
 
-📌 Skills Highlighted
+📌 Skills 
 RTL design (Verilog)
 
 FSM design
